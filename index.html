@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    
+    .button {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+  </header>
+  
+  <div class="container">
+    <h2>About Me</h2>
+    <p>Hello, I'm John Doe. I'm a web developer.</p>
+    
+    <h2>Contact Me</h2>
+    <p>Email: john@example.com</p>
+    
+    <button class="button" onclick="showMessage()">Click Me</button>
+    
+    <p id="message"></p>
+  </div>
+  
+  <script>
+    // JavaScript code
+    function showMessage() {
+      var messageElement = document.getElementById("message");
+      messageElement.textContent = "Button clicked!";
+    }
+  </script>
+</body>
+</html>
